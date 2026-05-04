@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VrewKriya — Coming Soon</title>
+  <link rel="icon" type="image/png" href="/logo.png" />
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap"
     rel="stylesheet" />
@@ -1196,7 +1197,7 @@
 
       try {
         // Attempt to register email via backend server
-        const res = await fetch('http://localhost:3000/notify', {
+        const res = await fetch('/notify', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: val })
